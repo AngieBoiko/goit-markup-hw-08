@@ -1,0 +1,46 @@
+.social-networks-title {
+  @include font(700, $main-font-size, 1.143, 00.03em, $main-light-color);
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.social-networsk-list {
+  @extend %flex-centred;
+}
+.social-networks-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-networks-link {
+  @extend %flex-centred;
+  width: 100%;
+  height: 100%;
+  color: $no-active-link-color;
+  background-color: $main-light-color;
+  border-radius: 50%;
+
+  fill: currentColor;
+  transition: fill 250ms $timing-function,
+    background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $main-light-color;
+  }
+
+  &.footer-theme {
+    color: $main-light-color;
+    fill: currentColor;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &.footer-theme:hover,
+  &.footer-theme:focus {
+    background-color: $accent-color;
+  }
+}

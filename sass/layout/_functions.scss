@@ -1,0 +1,33 @@
+.functions {
+  padding-bottom: $section-padding-bottom;
+
+  &-list {
+    display: flex;
+  }
+
+  &-list-item {
+    position: relative;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  @extend %flex-centred;
+
+  height: 70px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  &-title {
+    @include font(700, $main-font-size, 1.143, 00.03em, $main-light-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

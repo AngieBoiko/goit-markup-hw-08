@@ -1,0 +1,42 @@
+@import "./utils/variables";
+@import "./base/common";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/container";
+@import "./utils/visually-hidden";
+
+@import "./components/logo";
+@import "./layout/header";
+@import "./components/contacts";
+@import "./base/current-color";
+@import "./components/_mobile-menu-button.scss";
+@import "./layout/mobile-menu";
+
+@import "./layout/hero";
+@import "./components/hero-button";
+
+@import "./layout/features";
+@import "./components/title";
+
+@import "./layout/functions";
+
+@import "./layout/team";
+
+@import "./components/social-networks-list";
+
+@import "./layout/clients";
+
+@import "./layout/footer";
+@import "./components/address";
+@import "./components/subscription-form";
+@import "./components/subscription-form-button";
+
+@import "./components/backdrop";
+@import "./utils/is-hidden";
+@import "./layout/modal";
+@import "./components/modal-close-button";
+@import "./components/modal-form-button";
+
+@import "./components/filter-buttons";
+@import "./layout/projects";

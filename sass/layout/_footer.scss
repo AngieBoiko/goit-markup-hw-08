@@ -1,0 +1,19 @@
+.footer {
+  padding: 60px 0;
+  background: $footer-bg-color;
+
+  & .logo-link {
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.container.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+}
+.logo-address-container {
+  margin-right: 70px;
+}

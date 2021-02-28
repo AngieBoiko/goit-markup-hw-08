@@ -1,0 +1,15 @@
+.address {
+  @include font(400, $main-font-size, 1.714, 0.03em, $main-light-color);
+  &-link {
+    color: $addres-link-color;
+    transition: color 250ms $timing-function;
+  }
+  &-link:focus,
+  &-link:hover {
+    color: $accent-color;
+    fill: currentColor;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

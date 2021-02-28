@@ -1,0 +1,49 @@
+@media screen and(min-width:768px) {
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+
+    &-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .contacts-link {
+    @include font(500, 12px, 1.167, 00.02em, $secondary-text-color);
+
+    fill: currentColor;
+    text-decoration: none;
+
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: currentColor;
+    }
+  }
+  svg.icon-tel,
+  svg.icon-mail {
+    margin-right: 8px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .contacts-list {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+  .contacts-link {
+    font-size: $main-font-size;
+    line-height: 1.143;
+    padding: 32px 0;
+  }
+  svg.icon-tel,
+  svg.icon-mail {
+    margin-right: 10px;
+  }
+}

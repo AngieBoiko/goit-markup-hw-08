@@ -1,0 +1,38 @@
+//   .footer & {
+//     padding: 0;
+//     margin-right: 0;
+//     margin-bottom: 20px;
+//     color: $main-light-color;
+//   }
+
+.logo-link {
+  padding: 16px 0;
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 1.167, 00.03em, $logo-light-theme-color);
+
+  transition: all 250ms $timing-function;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and(min-width:768px) {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+  @media screen and(min-width:1200px) {
+    @include font(700, 26px, 1.192, 00.03em, $logo-light-theme-color);
+    margin-right: 93px;
+    padding: 25px 0;
+  }
+}
+.logo-name {
+  color: $accent-color;
+}
+.light-theme {
+  color: $logo-light-theme-color;
+}
+.dark-theme {
+  color: $main-light-color;
+}
