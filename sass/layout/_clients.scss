@@ -1,16 +1,63 @@
-.clients {
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
+// .clients {
+//   padding-top: $section-padding-top;
+//   padding-bottom: $section-padding-bottom;
 
+//   &-list {
+//     @extend %flex-centred;
+//   }
+//   &-list-item {
+//     width: 170px;
+//     height: 90px;
+//   }
+//   &-list-item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .client-item-link {
+//   @extend %flex-centred;
+
+//   border-radius: 4px;
+//   width: 100%;
+//   height: 100%;
+
+//   color: $no-active-link-color;
+//   border: 1px solid $no-active-link-color;
+//   background-color: $main-light-color;
+//   fill: currentColor;
+
+//   transition: color 250ms $timing-function, fill 250ms $timing-function,
+//     border-color 250ms $timing-function, border-color 250ms $timing-function;
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//     fill: $accent-color;
+//     border-color: $accent-color;
+//   }
+// }
+.clients {
+  padding: 60px 0;
+
+  &-title {
+    @include font(700, 28px, 1.179, 00.03em, $main-text-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
   &-list {
-    @extend %flex-centred;
+    @media screen and(max-width:479px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
   &-list-item {
-    width: 170px;
+    width: 210px;
     height: 90px;
-  }
-  &-list-item:not(:last-child) {
-    margin-right: 30px;
+    margin: 15px;
   }
 }
 
@@ -34,5 +81,30 @@
     color: $accent-color;
     fill: $accent-color;
     border-color: $accent-color;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .clients-list-item {
+    width: 226px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .clients {
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-bottom;
+  }
+  .clients-title {
+    @include font(
+      700,
+      $section-title-font-size,
+      1.167,
+      00.03em,
+      $main-text-color
+    );
+    margin-bottom: 50px;
+  }
+  .clients-list-item {
+    width: 170px;
   }
 }

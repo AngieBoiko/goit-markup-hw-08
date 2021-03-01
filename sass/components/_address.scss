@@ -1,5 +1,6 @@
 .address {
   @include font(400, $main-font-size, 1.714, 0.03em, $main-light-color);
+  margin-bottom: 60px;
   &-link {
     color: $addres-link-color;
     transition: color 250ms $timing-function;
@@ -10,6 +11,6 @@
     fill: currentColor;
   }
   &-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
