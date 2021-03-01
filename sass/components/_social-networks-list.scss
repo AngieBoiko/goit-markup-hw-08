@@ -47,3 +47,17 @@
 .follow-links-container {
   margin-bottom: 60px;
 }
+@media screen and(min-width:768px) {
+  .follow-links-container {
+    margin-bottom: 102px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .follow-links-container {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
+  .social-networks-title {
+    text-align: left;
+  }
+}

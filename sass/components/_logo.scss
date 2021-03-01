@@ -26,6 +26,12 @@
     margin-right: 93px;
     padding: 25px 0;
   }
+
+  .logo-address-container & {
+    @media screen and(min-width:768px) {
+      margin-right: 0;
+    }
+  }
 }
 .logo-name {
   color: $accent-color;
