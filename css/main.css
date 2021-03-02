@@ -1636,7 +1636,7 @@ a {
   }
   .project-info {
     max-width: 354px;
-    max-height: 146px;
+    min-height: 146px;
   }
 }
 
@@ -1644,6 +1644,10 @@ a {
   .projects {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .project-info {
+    max-width: 370px;
+    min-height: 110px;
   }
 }
 /*# sourceMappingURL=main.css.map */
