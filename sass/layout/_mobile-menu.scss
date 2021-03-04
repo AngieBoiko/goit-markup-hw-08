@@ -5,6 +5,9 @@
   top: 0;
   width: 100%;
   max-width: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 48px 40px;
   transform: translateX(-50%) translateY(-100%);
   transition: transform 500ms $timing-function;
@@ -15,9 +18,7 @@
     height: 100vh;
     transform: translateX(-50%) translateY(0%);
   }
-  &-nav-list {
-    margin-bottom: 302px;
-  }
+
   &-contacts-list {
     margin-bottom: 65px;
   }
